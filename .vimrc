@@ -22,8 +22,10 @@ syntax on
 set re=0
 
 call plug#begin('~/.vim/plugged')
+Plug 'vimsence/vimsence'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'prisma/vim-prisma'
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'preservim/nerdtree'
