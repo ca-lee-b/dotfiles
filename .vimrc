@@ -2,12 +2,13 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set mouse=a
 set number
 set cursorline
 set backspace=2
 set shiftwidth=4
 set tabstop=2
-
+set clipboard=unnamed
 set scrolloff=10
 set incsearch
 
@@ -36,13 +37,19 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'prisma/vim-prisma'
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Colorschemes
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
 Plug 'rose-pine/vim'
+Plug 'ntk148v/komau.vim'
+Plug 'rebelot/kanagawa.nvim'
+Plug 'nanotech/jellybeans.vim'
 
 " Other
+Plug 'vim-airline/vim-airline'
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -60,6 +67,7 @@ function! ShowDocumentation()
   endif
 endfunction
 
+
 set termguicolors
 set background=dark
-colorscheme catppuccin-mocha 
+colorscheme gruvbox 

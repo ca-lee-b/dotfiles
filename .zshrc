@@ -12,3 +12,9 @@ esac
 # pnpm end
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# alises
+alias projects="cd ~/documents/projects"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
