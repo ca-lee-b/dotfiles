@@ -5,10 +5,12 @@ return {
     priority = 1000,
   },
   {
+    "neanias/everforest-nvim",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      -- Habamax
-      colorscheme = "Habamax",
+      colorscheme = "everforest",
       background = "dark",
     },
   },
